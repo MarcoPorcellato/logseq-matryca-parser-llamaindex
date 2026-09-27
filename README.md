@@ -4,9 +4,10 @@ Optional adapter that converts the Parser's typed Logseq AST nodes into native
 LlamaIndex `TextNode` objects while preserving source, parent/child, and sibling
 relationships. The core Parser remains usable without LlamaIndex.
 
-> **Status:** experimental development package. No public repository or package
-> release is available yet. Compatibility, dependency-audit, and hosted-CI
-> gates remain pending; do not treat this checkout as a supported release.
+> **Status:** experimental development package. The public GitHub repository
+> exists, but no package release is available yet. Compatibility,
+> dependency-audit, and hosted-CI gates remain pending; do not treat this
+> checkout as a supported release.
 
 ## Intended use
 
