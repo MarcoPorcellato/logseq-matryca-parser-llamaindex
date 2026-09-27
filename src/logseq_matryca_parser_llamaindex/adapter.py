@@ -6,7 +6,6 @@ from collections.abc import Callable
 from pathlib import Path
 
 from llama_index.core.schema import NodeRelationship, RelatedNodeInfo, TextNode
-
 from logseq_matryca_parser.logos_core import ASTVisitor, LogseqNode
 from logseq_matryca_parser.synapse import build_synapse_metadata, page_source_node_id
 

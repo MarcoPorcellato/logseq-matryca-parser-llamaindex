@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 from llama_index.core.schema import NodeRelationship, TextNode
-from logseq_matryca_parser_llamaindex import to_llamaindex_nodes
-
 from logseq_matryca_parser.logos_core import LogseqNode
 from logseq_matryca_parser.synapse import SynapseAdapter, page_source_node_id
+
+from logseq_matryca_parser_llamaindex import to_llamaindex_nodes
 
 
 def _node(
