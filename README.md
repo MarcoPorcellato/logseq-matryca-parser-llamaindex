@@ -30,6 +30,14 @@ LlamaIndex dependency graph out of Parser's base installation. Parser's `ai`
 extra continues to cover its separate LangChain integration; it does not
 install this adapter.
 
+### Data handling
+
+The adapter itself performs no network requests, but exported nodes preserve
+page text and metadata such as source paths and properties. Embedding, indexing,
+or observability integrations may send that content to external services.
+Review the selected provider's data handling, retention, and logging settings
+before processing a private vault.
+
 ## Compatibility and security
 
 The provisional manifest bounds Parser to `>=1.10.0,<1.11.0` and
@@ -57,7 +65,10 @@ established:
 
 ```bash
 uv sync --locked
+uv build
 uv run pytest -q
 uv run ruff check .
-uv build
 ```
+
+The wheel build intentionally precedes `pytest`: the distribution-contract test
+reads the wheel's generated `METADATA` file from `dist/`.
