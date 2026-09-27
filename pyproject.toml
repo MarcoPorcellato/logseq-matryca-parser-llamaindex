@@ -25,8 +25,6 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/MarcoPorcellato/logseq-matryca-parser-llamaindex"
-Source = "https://github.com/MarcoPorcellato/logseq-matryca-parser-llamaindex"
 Parser = "https://github.com/MarcoPorcellato/logseq-matryca-parser"
 
 [tool.hatch.build.targets.wheel]
