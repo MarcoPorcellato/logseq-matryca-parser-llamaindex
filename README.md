@@ -52,6 +52,11 @@ from the Parser dependency graph does not establish that this optional
 LlamaIndex graph is free of NLTK advisories. Reconcile current advisory records
 and complete a clean audit before any release; do not add an unapproved waiver.
 
+Local experimental security-control behavior and its limits are documented in
+[`docs/SECURITY_EXCEPTION_CONTROLS.md`](docs/SECURITY_EXCEPTION_CONTROLS.md).
+These controls are unpublished and inactive; they do not authorize a waiver or
+release.
+
 ## Local development
 
 This repository intentionally has no production lock or release workflow yet:
